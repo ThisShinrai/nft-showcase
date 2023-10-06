@@ -11,13 +11,13 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
@@ -35,19 +35,19 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+-   **[Vehikl](https://vehikl.com/)**
+-   **[Tighten Co.](https://tighten.co)**
+-   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+-   **[64 Robots](https://64robots.com)**
+-   **[Cubet Techno Labs](https://cubettech.com)**
+-   **[Cyber-Duck](https://cyber-duck.co.uk)**
+-   **[Many](https://www.many.co.uk)**
+-   **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+-   **[DevSquad](https://devsquad.com)**
+-   **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+-   **[OP.GG](https://op.gg)**
+-   **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+-   **[Lendio](https://lendio.com)**
 
 ## Contributing
 
@@ -64,3 +64,35 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Laravel-Projekt starten
+
+Folge diesen Schritten, um dein Laravel-Projekt zum Laufen zu bringen:
+
+1. **.env-Datei erstellen**: Kopiere die `.env.example`-Datei und benenne sie in `.env` um. Passe die darin enthaltenen Umgebungsvariablen an, insbesondere die Einstellungen für deine SQL-Datenbank.
+
+2. **SQL-Datenbank konfigurieren**: Trage die Verbindungsinformationen deiner SQL-Datenbank in der `.env`-Datei ein, einschließlich des Hosts, des Benutzernamens und des Passworts.
+
+3. **Datenbankmigrationen ausführen**: Öffne dein Terminal oder die Kommandozeile und führe den folgenden Befehl aus, um die Datenbanktabellen zu erstellen:
+
+    ```bash
+    php artisan migrate
+    ```
+
+4. **Datenbank mit Testdaten füllen (optional)**: Wenn du Beispieldaten in deine Datenbank einfügen möchtest, führe den folgenden Befehl aus:
+
+    ```bash
+    php artisan db:seed nft_seeder
+    ```
+
+5. **Laravel-Anwendung starten**: Starte deine Laravel-Anwendung, indem du den folgenden Befehl ausführst:
+
+```bash
+   php artisan serve
+```
+
+Dies startet einen Entwicklungsserver, und du erhältst eine Ausgabe, die den URL angibt, auf dem deine Anwendung erreichbar ist. Normalerweise ist es `http://localhost:8000`.
+
+6. **Anwendung testen**: Öffne deinen Webbrowser und gehe zur angezeigten URL, um deine Laravel-Anwendung zu testen.
+
+Das ist alles! Das Laravel-Projekt sollte jetzt erfolgreich gestartet sein.
